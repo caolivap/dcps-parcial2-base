@@ -1,1 +1,7 @@
+{{#each model as |author|}}
+      {{#link-to 'authors.author' author.id class="link-author"}}
+        {{author.username}}
+      {{/link-to}}
+{{/each}}
+
 {{outlet}}
